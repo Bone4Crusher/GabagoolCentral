@@ -12,15 +12,16 @@ To reattach to the tmux session use `tmux attach -t playit`
 Create a new service file using `sudo nano /etc/systemd/system/playit.service`  
 Add the following content to the file:  
 `[Unit]`  
-Description=Playit Tunnel`  
-After=network.target`  
+`Description=Playit Tunnel`  
+`After=network.target`  
   
-[Service]`  
-ExecStart=/path/to/playit`  
-Restart=always`  
-User=your-username`  
-WorkingDirectory=/home/your-username`  
-StandardOutput=journal`  
+`[Service]`  
+`ExecStart=/path/to/playit`  
+`Restart=always`  
+`User=your-username`  
+`WorkingDirectory=/home/your-username`  
+`StandardOutput=journal`  
     
-[Install]  
-WantedBy=multi-user.target`  
+`[Install]`  
+`WantedBy=multi-user.target`  
+**NOTE:** Make sure to add your username to the lines that require it. Also add the proper playit path or playit will get into a boot loop and just crash. You can use `which playit` to find the install path.  
