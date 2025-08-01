@@ -16,5 +16,5 @@ Creating Crafty Docker:
   `registry.gitlab.com/crafty-controller/crafty-4:latest`  
 
 Note: Default login creds will be at /var/opt/minecraft/crafty/crafty-4/app/config/default-creds.txt (Change these ASAP)  
-Default Crafty portal address should be at the local IP address of the machine, at port 8843. EXAMPLE: 192.168.0.1:8843.
-You can find the local ip in Debian by using `ip a s | grep 192.*`
+Default Crafty portal address should be at the local IP address of the machine, at port 8843. EXAMPLE: 192.168.0.1:8843.  
+You can find the local ip in Debian by using `ip a s | grep 192.*`  
